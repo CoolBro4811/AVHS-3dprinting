@@ -6,5 +6,5 @@ class Order():
         self.weight = weight if weight else 0.0
         self.cost = cost if cost else 0.0
 
-        def __str__(self) -> str:
-            return f"{self.volume}, {self.weight}, {self.cost}"
+        def __str__(self):
+            return '%s %s %s' %(self.volume, self.weight, self.cost)
